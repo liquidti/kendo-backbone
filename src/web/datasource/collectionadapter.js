@@ -17,6 +17,7 @@ kendo.Backbone.CollectionAdapter = (function(){
     this.listenTo(this.collection, "add", this._addToDataSource);
     this.listenTo(this.collection, "remove", this._removeFromDataSource);
     this.listenTo(this.collection, "reset", this._resetDataSource);
+    this.listenTo(this.collection, "sync", this._resetDataSource);
   };
 
   // Instance methods
